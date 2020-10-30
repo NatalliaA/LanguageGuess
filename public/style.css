@@ -1,0 +1,13 @@
+body{
+    background-color: darkseagreen;
+    margin: 3em;
+}
+#input{
+    color: purple;
+}
+#guess{
+    color: blue;
+}
+#error{
+    color: red;
+}

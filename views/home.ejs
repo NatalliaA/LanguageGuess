@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Languge Guess</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Language Guess!</h1>
+        <h3>Type a text with 5 or more words in any language and see our guess.</h3>
+        <h3>You can also copy our examples:</h3>
+        <p>Berlin ist eine tolle Stadt.</p>
+        <p>Москва - большой город.<p>
+        <p>Madrid es la mayor ciudad del país.</p>
+        <p>Boston is a very pretty city.</p>
+        <form id="langform" method="POST" action="/guess">
+        <textarea rows=10 cols=40 placeholder = "type your text" name = "inputText"></textarea>
+        <button>Get our guess</button>
+        </form>      
+        <p id="input"><%= userinput %></p>
+        <p id="guess"><%= guess %></p>
+        <p id="error"><%= err %></p>
+    </body>
+</html>
